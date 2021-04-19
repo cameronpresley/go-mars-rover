@@ -12,7 +12,7 @@ func main() {
 	r := Rover{x: 0, y: 0, direction: North}
 	input := ""
 	for ok := true; ok; ok = (input != "q") {
-		input, _ = getInput(reader, "What direction to move?")
+		input, _ = getInput(reader, "Choose a command Move (f)orward, Move (b)ackward, Turn (l)eft, Turn (r)ight, or (q)uit?")
 		input = strings.ToLower(input)
 		switch input {
 		case "f":
